@@ -14,6 +14,8 @@ class iphone implements mobile{
 public $name;
 public function presshome(){
     echo 'show all apps are open';
+        echo 'show all apps are open';
+
 
 
 }

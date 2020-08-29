@@ -15,6 +15,7 @@ class iphone extends makeDevice {
 
     public $owner;
     public $user;
+    public $dealer;
 
     public function testperformance(){
     echo "testperformance is good";
