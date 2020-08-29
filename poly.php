@@ -33,6 +33,9 @@ public function presshome(){
 
 $iphone=new iphone();
 $iphone -> presshome();
+
+
+
 echo "<pre>"; print_r($iphone); echo "</pre>";
 
 
