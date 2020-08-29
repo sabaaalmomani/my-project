@@ -25,9 +25,10 @@ class sony {
 
 public $name;
 public function presshome(){
-    echo 'close all apps';}
+    echo 'close all apps done';}
 
 }
+
 $iphone=new iphone();
 $iphone -> presshome();
 echo "<pre>"; print_r($iphone); echo "</pre>";
