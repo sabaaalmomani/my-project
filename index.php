@@ -30,7 +30,7 @@ Name:
 <input type="text" name="name" id="name" value="<?php if(isset($_GET["n"] )) echo $_GET["n"]; ?>" > 
 <span class="red"> <?php if(isset($_GET["nE"] )) echo  $_GET["nE"];?></span>
 
-<span class="green"> <?php if(isset($_GET["nV"] )) echo  $_GET["nV"]; ?></span>
+<span class="red"> <?php if(isset($_GET["nV"] )) echo  $_GET["nV"]; ?></span>
 
 
     
@@ -39,14 +39,14 @@ Name:
 E-mail:
 <input  type="email" name="email" value=" <?php if(isset($_GET["e"] )) echo $_GET["e"];  ?>" />
 <span> <?php if(isset($_GET["eE"] )) echo  $_GET["eE"];?> </span>
-<span class="green"> <? if(isset($_GET["eV"] )) echo  $_GET["eV"]; ?> </span>
+<span class="red"> <? if(isset($_GET["eV"] )) echo  $_GET["eV"]; ?> </span>
 
 
 <br><br>
 Password:
 <input type="password" name="password">
-<span class="red"> <?if(isset($_GET["pe"] )) echo  $_GET["pe"];?></span>
-<span class="green"> <?if(isset($_GET["pV"] )) echo  $_GET["Pv"];?></span>
+<span class="red"> <?php if(isset($_GET["pE"] )) echo  $_GET["pE"];?></span>
+<span class="red"> <?php if(isset($_GET["pV"] )) echo  $_GET["pV"];?></span>
 
 <br>
 
@@ -55,7 +55,7 @@ Password:
 Gender:
 <input type="radio" id="male"  name="gender" value="male"> Male
 <input type="radio" id="female"  name="gender" value="female">female
-<span class="green"> <?if(isset ($_GET["GError"] )) echo $_GET["GError"]; ?></span>
+<span class="red"> <?if(isset ($_GET["GError"] )) echo $_GET["GError"]; ?></span>
 
 <br>
 
@@ -72,7 +72,7 @@ Gender:
 
 <br><br>
 
-<button type="sign up" class="btn btn-primary" >sign up</button> <br>
+<button type="sign up" class="btn btn-primary" > sign up </button> <br>
 <p> you have account? <a href="login.php" class="text-dark">log in</a>
 
 </form>
