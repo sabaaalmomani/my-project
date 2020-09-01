@@ -73,7 +73,7 @@ Gender:
 <br><br>
 
 <button type="sign up" class="btn btn-primary" >sign up</button> <br>
-<p> you have account? <a href="login.php">log in</a>
+<p> you have account? <a href="login.php" class="text-dark">log in</a>
 
 </form>
 </div>
