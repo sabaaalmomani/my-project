@@ -12,12 +12,11 @@ $password = "root";
 $dbname = "newDB";
 
 $conn = new mysqli($servername, $username, $password, $dbname);
-
-
 $id=$_GET['usid'];
+
+
 //var_dump($_GET['usid']);die;
 if(isset($_POST['update'])){
-
     $names=$_POST['name'];
     $email=$_POST['email'];
     $gender=$_POST['gender'];
@@ -42,7 +41,7 @@ if(isset($_POST['update'])){
     }
 
 $sql_select= " SELECT * FROM user WHERE  id=$id; ";
-$user = $conn->query($sql_select) -> fetch_array(MYSQLI_ASSOC) ;
+$user = $conn->query($sql_select)->fetch_array(MYSQLI_ASSOC);;
 
 $conn->close();
 
@@ -58,12 +57,23 @@ $conn->close();
 <html>
 <body>
 <head>
-<title> PHP UPDATE DATA </TITLE>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <link  href="bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" media="screen">
+
+
 </head>
+<title> PHP UPDATE DATA </TITLE>
+
 
 <form action="<?php $_SERVER['PHP_SELF'] ?>" method="POST">
 Name to ubdate:
-<input type="text" name="name" id="name" value=<?=$user['names']?> > 
+<input type="text" name="name" id="name" value=<?=$user['names']?> >
 
 <br><br>
  new E-mail:
@@ -75,6 +85,7 @@ Name to ubdate:
 <input type="radio" <?=($user['gender'] == 'female')?"checked='checked'":""?> id="female" name="gender" value="female">female
 <br> 
 <input type= "submit" name="update" value="update data" >
+<a href="table2.php"  class="btn btn-dark">Back</a>
 
 </form>
 

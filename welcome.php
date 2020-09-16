@@ -174,7 +174,7 @@ if($error)
 
       if ($conn->query($sql) === TRUE) {
 
-            header("Location: login.php ");
+            header("Location: newlog.php ");
 
           }
 

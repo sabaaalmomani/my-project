@@ -6,6 +6,7 @@ $conn = new mysqli('localhost', 'root', 'root', 'newDB');
 
 $id=$_GET['usid'];
 
+
 $sql_select= " SELECT * FROM user WHERE  id=$id; ";
 $user = $conn->query($sql_select) -> fetch_array(MYSQLI_ASSOC) ;
      

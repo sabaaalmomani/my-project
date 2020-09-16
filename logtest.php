@@ -9,7 +9,7 @@
     $password = "root";
     $dbname = "newDB";
     $cdate = date('Y-m-d H:i:s');
-  
+
     $conn = new mysqli($servername, $username, $password, $dbname);
   
     if ($conn->connect_error) {
@@ -32,12 +32,12 @@
 
 
           }else{
-            header("Location: login.php?error=invalid_password");
+            header("Location: newlog.php?error=invalid_password");
 
           }
 
       }else{
-          header("Location: login.php?error=invalid_username");
+          header("Location: newlog.php?error=invalid_username");
       }
       echo '<pre>';
          var_dump($user['passwords'],$_POST['password']);die;

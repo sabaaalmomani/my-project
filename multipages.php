@@ -44,7 +44,7 @@
         }
         echo "<br/>";
 
-       /* for($i=1;$i<=$pages_count;$i++){
+       /*for($i=1;$i<=$pages_count;$i++){
               if($page==$i)
                     echo $page; 
                 else
@@ -55,7 +55,7 @@
                  echo '-';  } */
 
 
-          $next=$page+1;
+         $next=$page+1;
           $previous=$page-1;
          
           if($next<=$pages_count)
@@ -66,8 +66,10 @@
 
           if($previous>0)
             echo '<a href="multipages.php?nOfpage=' . $previous . '">previous</a>';
+
+
+            $conn->close(); 
  
-        $conn->close();
 
 
 
